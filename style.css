@@ -1,0 +1,251 @@
+/* Pon aquí tu nombre completo */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lexend:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --breakpoint: 1200px;
+    --color-clar: rgb(245, 245, 245);
+    --color-secundari: #a46d3c;
+    --color-secundari50x100: hsla(28, 46%, 44%, 0.50);
+    --font-titols: "Lexend", Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: var(--breakpoint);
+    height: 150px;
+    margin: 0 auto;
+
+}
+
+.logo-header {
+    display: flex;
+
+}
+
+.header .logo-header h1 {
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: 45px;
+} 
+
+.header .logo-header h1 span {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--color-secundari);
+}
+
+/*prueba de hover*/
+
+.header {
+    position: relative;
+    /* Ajusta el tamaño de la imagen y del contenedor */
+}
+
+/* Pseudo-elemento para la imagen */
+.header .logo-header h1 span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Estilos para la imagen */
+    background-image: url("/img/Lucho.jpg");
+    background-size: auto;
+    opacity: 0; /* Se hace la imagen invisible por defecto */
+    transition: opacity 0.3s ease-in-out; /* Transición suave para el efecto hover */
+}
+
+  /* Efecto hover */
+.header .logo-header h1 span:hover::before {
+    opacity: 1; /* Se hace la imagen visible al hacer hover */
+}
+
+
+
+.header-social {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 300px;
+    gap: 40px;
+}
+
+.header-social img {
+    width: 50px;
+    height: 50px;
+}
+
+hr {
+    border-color: var(--color-secundari);
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: var(--breakpoint);
+    
+}
+
+.navegacion .nav a:hover {
+
+    border-top: 3px solid var(--color-secundari);
+    color: var(--color-secundari);
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--color-secundari);
+    margin: 20px;
+    text-align: center;
+    
+}
+
+
+
+.container-recetas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: var(--breakpoint);
+    margin: 0 auto;
+    height: 1400px;
+    row-gap: 10px;
+    
+}
+
+.receta {
+    width: 32.50%;
+    border: 8px solid rgba(70, 49, 49, 0);
+}
+
+/*estilos de archivo2*/
+
+.container-zanahorias {
+    display: flex;
+    width: 1283px;
+    gap: 20px;
+}
+
+.fondo {
+    width: 48%;
+    height: 450px;
+    background-image: url(/img/zanahorias_glaseadas_con_miel_56471_600.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.texto-receta {
+    width: 48%;
+}
+
+.texto-receta p {
+    margin-left: -20px;
+}
+
+.texto-receta p, li{
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 20px;
+    color: var(--color-secundari);
+    margin: 10px;
+    text-align: center;
+}
+/*listo*/
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    /*background-color: var(--color-secundari);*/
+    height: 50px;
+}
+
+.boton span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 50px;
+    color: var(--color-clar);
+    background-color: var(--color-secundari);
+    border: 10px 20px solid var(--color-secundari);
+}
+
+.receta:hover {
+    border: 8px solid var(--color-secundari50x100);
+}
+
+.receta img {
+    width: 100%;
+}
+
+.centrar  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: var(--breakpoint);
+}
+
+.Siguientes :hover {
+    border-top: 3px solid var(--color-secundari);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    background-color: var(--color-secundari);
+    
+}
+
+.footer-container img {
+    display: flex;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 30px;
+
+}
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    
+    width: var(--breakpoint);
+    margin: 50px auto;
+}
+
+.footer-container .link p {
+    color: white;
+}
+
+.footer-container .link p:hover {
+    border-top: 3px solid white;
+}
